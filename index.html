@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kalkulator sederhana</title>
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="history">
+            <p>Histori:</p>
+            <div id="history-data">
+            </div>
+        </div>
+        <button class="remove-history-button" onclick="clearHistory()">Hapus</button>
+        <div class="display">
+            <input id="display" readonly>
+        </div>
+        <div class="buttons-row">
+            <div class="col-1">
+                <button class="button-style" onclick="appendToDisplay('7')">7</button>
+                <button class="button-style" onclick="appendToDisplay('4')">4</button>
+                <button class="button-style" onclick="appendToDisplay('1')">1</button>
+                <button class="button-style" onclick="clearDisplay()">C</button>
+            </div>
+            <div class="col-2">
+                <button class="button-style" onclick="appendToDisplay('8')">8</button>
+                <button class="button-style" onclick="appendToDisplay('5')">5</button>
+                <button class="button-style" onclick="appendToDisplay('2')">2</button>
+                <button class="button-style" onclick="appendToDisplay('0')">0</button>
+            </div>
+            <div class="col-3">
+                <button class="button-style" onclick="appendToDisplay('9')">9</button>
+                <button class="button-style" onclick="appendToDisplay('6')">6</button>
+                <button class="button-style" onclick="appendToDisplay('3')">3</button>
+                <button class="button-style" onclick="appendToDisplay('.')">.</button>
+            </div>
+            <div class="col-4">
+                <button class="button-style" onclick="appendToDisplay('+')">+</button>
+                <button class="button-style" onclick="appendToDisplay('-')">-</button>
+                <button class="button-style" onclick="appendToDisplay('*')">*</button>
+                <button class="button-style" onclick="appendToDisplay('/')">/</button>
+                <button class="button-style equal-style" onclick="calculate()">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
